@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.mainT {
+    color: #707070;
+    font-family: Gilroy;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.mainfo {
+    display: flex;
+    gap: 117px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mainfo div h2 {
+    color: #000;
+    font-family: Gilroy;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ckickable {
+    margin-top: 54px;
+    display: flex;
+    gap: 54px;
+    justify-content: center;
+}
+
+.big {
+    color: #000;
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.clickT {
+    color: #707070;
+    font-family: Gilroy;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    gap: 34px;
+}
+
+.active {
+    transform: translateX(95%);
+    transition: 0.5s ease;
+
+}
+
+.slid {
+    width: 39px;
+    height: 24px;
+    background: #c4c4c4;
+    border-radius: 12px;
+    display: flex;
+
+}
+
+.slid div {
+    background: white;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    margin: 3px;
+}
+
+.nec {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.activee {
+    background: rgb(131, 131, 226);
+
+}
+
+.door {
+    width: 200px;
+    height: 100px;
+    background: rgb(225, 0, 255);
+    position: absolute;
+    left: 46%;
+    top: 30%;
+    opacity: 0;
+}
+
+.round {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.black {
+    background: #000;
+}
+
+.white {
+    background: rgb(214, 214, 214);
+}
+
+.gold {
+    background: rgb(255, 190, 68);
+}
+
+.color {
+    display: flex;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.koleso {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 36%;
+    left: 35%;
+    animation-name: rotation;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.kolesos {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 36%;
+    left: 59%;
+    animation-name: rotation;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
