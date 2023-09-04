@@ -84,7 +84,10 @@ let urls = {
 door.onclick = () => {
     ckickable.style.display = "none"
     color.style.display = "flex"
-
+    let ses = document.querySelectorAll(".se")
+    ses.forEach(se => {
+        se.style.display = "none"
+    });
     colordivs.forEach(colordiv => {
         colordiv.onclick = () => {
             tesla.setAttribute("src", urls[colordiv.getAttribute("data-color")])
